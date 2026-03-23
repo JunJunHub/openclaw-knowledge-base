@@ -48,6 +48,42 @@ openclaw onboard
 openclaw gateway start
 ```
 
+# 中文输入法
+
+虚拟机 Ubuntu 默认无中文输入，需手动安装：
+
+```bash
+# 安装 IBus 智能拼音
+sudo apt install ibus-libpinyin
+
+# 重启 IBus
+ibus restart
+```
+
+配置步骤：
+1. 右键托盘 → 首选项 → 输入法 → 添加
+2. 选择「中文」→「智能拼音」
+3. 切换快捷键：`Super+Space`
+
+# 开发工具
+
+## Claude Code CLI
+
+Anthropic 官方编程助手：
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+版本信息：
+- 版本：2.1.81
+- 路径：`/home/junjun/.nvm/versions/node/v24.14.0/bin/claude`
+
+注意事项：
+- 国内需配置代理（api.anthropic.com 被墙）
+- 首次运行需登录 Anthropic 账号
+- 官网：https://www.anthropic.com
+
 # 关键配置文件
 
 | 文件 | 用途 |
