@@ -53,9 +53,21 @@ df -h / && free -h
 # 查看最新版本
 curl -s https://api.github.com/repos/obsidianmd/obsidian-releases/releases/latest | grep '"tag_name"'
 
-# 下载（以 v1.8.9 为例）
+# 自动检测架构并下载（推荐）
+ARCH=$(uname -m)
+case $ARCH in
+  x86_64)  ASSET="Obsidian-1.8.9.AppImage" ;;
+  aarch64) ASSET="Obsidian-1.8.9-arm64.AppImage" ;;
+  *)       echo "不支持的架构: $ARCH"; exit 1 ;;
+esac
+
 cd ~/Downloads
-wget "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.9/Obsidian-1.8.9.AppImage"
+wget "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.9/${ASSET}"
+
+# 或者使用 awk 自动过滤（适用于自动化脚本）
+# curl -s https://api.github.com/repos/obsidianmd/obsidian-releases/releases/latest | \
+#   awk -F'"' '/browser_download_url.*AppImage/ {print $4}' | \
+#   grep -E "$(uname -m|x86_64|aarch64)" | head -1 | xargs wget
 ```
 
 ### 3. 安装到用户目录
