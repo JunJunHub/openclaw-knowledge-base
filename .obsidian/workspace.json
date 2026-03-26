@@ -11,10 +11,14 @@
             "id": "db18e254f4b313dc",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "03-AI编程工具/AI编码工具对比-Superpowers-vs-SpecKit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI编码工具对比-Superpowers-vs-SpecKit"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 326.5
   },
   "right": {
     "id": "1665fb1d375db12f",
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "03-AI编程工具/AI编码工具对比-Superpowers-vs-SpecKit.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "AI编码工具对比-Superpowers-vs-SpecKit 的大纲"
             }
           }
         ],
@@ -164,6 +169,31 @@
   },
   "active": "db18e254f4b313dc",
   "lastOpenFiles": [
+    "04-自动化流程/黄金价格监控报告-2026-03-23.md",
+    "04-自动化流程/AI技术热点收集-2026-03-22.md",
+    "06-OPC运营/热点采集报告-2026-03-12.md",
+    "03-AI编程工具/Spec-Kit-第三方扩展生态.md",
+    "03-AI编程工具/SpecSwarm-完整指南.md",
+    "03-AI编程工具/Superpowers-功能概览.md",
+    "03-AI编程工具/Spec-Kit-技术栈工具.md",
+    "03-AI编程工具/Spec-Kit-完整指南.md",
+    "03-AI编程工具/Spec-Kit-多Agent模式.md",
+    "03-AI编程工具/Obsidian-CLI-AI集成前沿策略.md",
+    "03-AI编程工具/AI编码工具对比-Superpowers-vs-SpecKit.md",
+    "03-AI编程工具/AI编码工具生态全景.md",
+    "06-OPC运营/AI热点收集与内容创作指南.md",
+    "README.md",
+    "06-OPC运营/接单平台调研-闲鱼入门指南.md",
+    "06-OPC运营/小红书发布格式规范.md",
+    "05-配置指南/飞书群组自动回复配置.md",
+    "05-配置指南/飞书多Agent路由配置.md",
+    "05-配置指南/搜索配置统一规范.md",
+    "05-配置指南/Web-Search搜索配置.md",
+    "05-配置指南/Memory-Search远程嵌入配置.md",
+    "04-自动化流程/openclaw-recovery一键恢复工具开发笔记.md",
+    "04-自动化流程/OpenClaw一键恢复脚本开发指南.md",
+    "04-自动化流程/OpenClaw一键恢复脚本.md",
+    "02-核心概念/多Agent架构详解.md",
     "11-Archive",
     "10-模板",
     "09-资源索引",
@@ -171,34 +201,9 @@
     "08-收益分析/平台数据",
     "08-收益分析",
     "07-踩坑记录/飞书插件路径冲突问题.md",
-    "07-踩坑记录/本地嵌入服务超时问题.md",
-    "07-踩坑记录/小红书Cookie过期与浏览器配置问题.md",
-    "07-踩坑记录/ibus-qt4-Ubuntu-22-04废弃问题.md",
-    "07-踩坑记录/VMWare-Tools与FUSE冲突解决方案.md",
-    "07-踩坑记录/Snap-Chromium-AppArmor问题.md",
-    "07-踩坑记录/Serper插件不兼容官方版.md",
-    "07-踩坑记录/QQBot插件日志刷屏问题.md",
     "07-踩坑记录",
-    "05-配置指南/飞书群组自动回复配置.md",
-    "05-配置指南/飞书多Agent路由配置.md",
-    "05-配置指南/搜索配置统一规范.md",
     "05-配置指南/tmp-config",
-    "05-配置指南/Web-Search搜索配置.md",
-    "05-配置指南/Memory-Search远程嵌入配置.md",
     "05-配置指南",
-    "tmp-config",
-    "04-自动化流程/OpenClaw一键恢复脚本开发指南.md",
-    "04-自动化流程/openclaw-recovery一键恢复工具开发笔记.md",
-    "04-自动化流程/OpenClaw一键恢复脚本.md",
-    "04-自动化流程",
-    "03-AI编程工具/Spec-Kit-技术栈工具.md",
-    "03-AI编程工具/Spec-Kit-多Agent模式.md",
-    "06-OPC运营/接单平台调研-闲鱼入门指南.md",
-    "06-OPC运营/小红书发布格式规范.md",
-    "03-AI编程工具/Obsidian-CLI-AI集成前沿策略.md",
-    "03-AI编程工具/Spec-Kit-完整指南.md",
-    "03-AI编程工具/Superpowers-功能概览.md",
-    "03-AI编程工具/AI编码工具对比-Superpowers-vs-SpecKit.md",
-    "03-AI编程工具/AI编码工具生态全景.md"
+    "tmp-config"
   ]
 }
