@@ -1,5 +1,6 @@
 # Spec-Kit 完整指南
 
+> **分类**：AI 编程工具
 > **相关文档**：[[AI编码工具生态全景]] | [[AI编码工具对比-Superpowers-vs-SpecKit]] | [[Superpowers-功能概览]] | [[Spec-Kit-多Agent模式]] | [[Spec-Kit-技术栈工具]]
 
 ---

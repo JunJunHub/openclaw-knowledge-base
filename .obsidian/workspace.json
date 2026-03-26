@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 329.5
   },
   "right": {
     "id": "1665fb1d375db12f",
@@ -90,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -108,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "README 的出链列表"
+              "title": "出链"
             }
           },
           {
@@ -137,20 +136,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 414.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -165,21 +164,41 @@
   },
   "active": "db18e254f4b313dc",
   "lastOpenFiles": [
-    "02-核心概念/Spec-Kit-技术栈工具.md",
-    "02-核心概念/Spec-Kit-多Agent模式.md",
-    "02-核心概念/Spec-Kit-完整指南.md",
-    "README.md",
-    "06-踩坑记录/飞书插件路径冲突问题.md",
-    "06-踩坑记录/小红书Cookie过期与浏览器配置问题.md",
-    "06-踩坑记录/VMWare-Tools与FUSE冲突解决方案.md",
-    "06-踩坑记录/Snap-Chromium-AppArmor问题.md",
-    "06-踩坑记录/QQBot插件日志刷屏问题.md",
-    "03-配置指南/飞书群组自动回复配置.md",
-    "03-配置指南/飞书多Agent路由配置.md",
-    "03-配置指南/搜索配置统一规范.md",
-    "02-核心概念/多Agent消息互通指南.md",
-    "02-核心概念/多Agent架构详解.md",
-    "01-安装部署/OpenClaw-Ubuntu安装部署.md",
-    "01-安装部署/Obsidian-AppImage安装配置指南.md"
+    "11-Archive",
+    "10-模板",
+    "09-资源索引",
+    "08-收益分析/月度报告",
+    "08-收益分析/平台数据",
+    "08-收益分析",
+    "07-踩坑记录/飞书插件路径冲突问题.md",
+    "07-踩坑记录/本地嵌入服务超时问题.md",
+    "07-踩坑记录/小红书Cookie过期与浏览器配置问题.md",
+    "07-踩坑记录/ibus-qt4-Ubuntu-22-04废弃问题.md",
+    "07-踩坑记录/VMWare-Tools与FUSE冲突解决方案.md",
+    "07-踩坑记录/Snap-Chromium-AppArmor问题.md",
+    "07-踩坑记录/Serper插件不兼容官方版.md",
+    "07-踩坑记录/QQBot插件日志刷屏问题.md",
+    "07-踩坑记录",
+    "05-配置指南/飞书群组自动回复配置.md",
+    "05-配置指南/飞书多Agent路由配置.md",
+    "05-配置指南/搜索配置统一规范.md",
+    "05-配置指南/tmp-config",
+    "05-配置指南/Web-Search搜索配置.md",
+    "05-配置指南/Memory-Search远程嵌入配置.md",
+    "05-配置指南",
+    "tmp-config",
+    "04-自动化流程/OpenClaw一键恢复脚本开发指南.md",
+    "04-自动化流程/openclaw-recovery一键恢复工具开发笔记.md",
+    "04-自动化流程/OpenClaw一键恢复脚本.md",
+    "04-自动化流程",
+    "03-AI编程工具/Spec-Kit-技术栈工具.md",
+    "03-AI编程工具/Spec-Kit-多Agent模式.md",
+    "06-OPC运营/接单平台调研-闲鱼入门指南.md",
+    "06-OPC运营/小红书发布格式规范.md",
+    "03-AI编程工具/Obsidian-CLI-AI集成前沿策略.md",
+    "03-AI编程工具/Spec-Kit-完整指南.md",
+    "03-AI编程工具/Superpowers-功能概览.md",
+    "03-AI编程工具/AI编码工具对比-Superpowers-vs-SpecKit.md",
+    "03-AI编程工具/AI编码工具生态全景.md"
   ]
 }

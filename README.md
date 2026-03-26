@@ -10,19 +10,33 @@
 
 ```
 obsidian/
-├── 00-Inbox/          # 收件箱，临时笔记待整理
-├── 01-安装部署/        # OpenClaw 安装配置相关
-├── 02-核心概念/        # 架构、Agent、Session、AI工具等
-├── 03-自动化流程/      # Cron、采集、发布自动化
-├── 04-配置指南/        # openclaw.json 及各组件配置
-├── 05-三大专栏/        # 热点/实战/创业日记方法论
-├── 06-踩坑记录/        # 问题解决、故障排查
-├── 07-收益分析/        # 月度报告、平台数据
-├── 08-资源索引/        # 快速查找、命令速查
-├── 09-模板/           # 文章模板、笔记模板
-├── 10-Archive/        # 归档过时内容
-└── .sync-state.json   # 同步状态记录
+├── 00-Inbox/           # 收件箱，临时笔记待整理
+├── 01-安装部署/         # OpenClaw/Obsidian 安装配置
+├── 02-核心概念/         # OpenClaw 核心概念（Agent/Session/Binding）
+├── 03-AI编程工具/       # AI 编程工具（Spec-Kit/Superpowers/Claude Code）
+├── 04-自动化流程/       # OpenClaw 自动化脚本工具
+├── 05-配置指南/         # OpenClaw 各组件配置
+├── 06-OPC运营/          # 一人公司运营（内容创作/接单平台）
+├── 07-踩坑记录/         # 问题解决、故障排查
+├── 08-收益分析/         # OPC 收益追踪
+├── 09-资源索引/         # 链接、资源汇总
+├── 10-模板/            # 笔记模板
+└── 11-Archive/         # 归档
 ```
+
+---
+
+## 目录说明
+
+| 目录 | 数量 | 用途 |
+|------|------|------|
+| **01-安装部署** | 3 | OpenClaw、Obsidian 安装配置指南 |
+| **02-核心概念** | 2 | OpenClaw Agent、Session、Binding 等核心概念 |
+| **03-AI编程工具** | 7 | Spec-Kit、Superpowers、Claude Code 等 AI 编程工具 |
+| **04-自动化流程** | 3 | openclaw-recovery 等自动化脚本 |
+| **05-配置指南** | 5 | Memory Search、Web Search、飞书等配置 |
+| **06-OPC运营** | 2 | 小红书发布、接单平台等运营内容 |
+| **07-踩坑记录** | 8 | 问题解决、故障排查 |
 
 ---
 
@@ -41,12 +55,7 @@ Obsidian 使用 `[[文件名]]` 语法建立文档间的双向链接，形成知
 ### 如何查看关联
 
 1. **关系图谱**：`Ctrl+G`（或点击左侧图谱图标）
-   - 可视化显示所有文档的关联关系
-   - 节点大小表示连接数量
-
-2. **反向链接面板**：每个文档底部
-   - 显示哪些文档链接到当前文档
-   - 显示当前文档链接的其他文档
+2. **反向链接面板**：每个文档底部显示 Backlinks
 
 ### 当前知识网络
 
@@ -57,7 +66,6 @@ Obsidian 使用 `[[文件名]]` 语法建立文档间的双向链接，形成知
     │       └── [[Spec-Kit-完整指南]]
     │               ├── [[Spec-Kit-多Agent模式]]
     │               └── [[Spec-Kit-技术栈工具]]
-    └── 其他工具...
 
 [[多Agent架构详解]]
     └── [[多Agent消息互通指南]]
@@ -67,61 +75,30 @@ Obsidian 使用 `[[文件名]]` 语法建立文档间的双向链接，形成知
 
 ## 知识库整理原则
 
-### 1. 去重合并
+### 1. 主题分离
 
-- 同一主题的多个文档合并为一篇完整文档
-- 保留最详细、最新的版本作为基础
-- 避免信息碎片化
+- OpenClaw 相关文档与 AI 编程工具分开
+- 技术文档与运营文档分开
+- 每个目录职责单一
 
-**示例**：7 篇 Spec-Kit 文档 → 合并为 3 篇核心文档
+### 2. 去重合并
 
-### 2. 添加双链
+- 同一主题的多个文档合并为一篇
+- 保留最详细、最新的版本
+- 删除过时或重复的内容
 
-每个文档开头添加相关文档链接：
+### 3. 添加双链
+
+每个文档开头添加分类和相关文档：
 
 ```markdown
 # 文档标题
 
+> **分类**：目录名
 > **相关文档**：[[相关文档1]] | [[相关文档2]]
 
 内容...
 ```
-
-### 3. 状态文件追踪
-
-`.sync-state.json` 记录：
-- 已处理的 memory 日志文件
-- 新增/删除的笔记
-- 各分类统计
-
----
-
-## 笔记规范
-
-### YAML Frontmatter（可选）
-
-```yaml
----
-title: 笔记标题
-date: 2026-03-20
-tags: [tag1, tag2]
-source: workspace-coder/troubleshooting/xxx.md
----
-```
-
-### 标签体系
-
-| 标签前缀 | 用途 | 示例 |
-|---------|------|------|
-| `#openclaw/` | OpenClaw 相关 | `#openclaw/安装` `#openclaw/配置` |
-| `#ai/` | AI 工具相关 | `#ai/spec-kit` `#ai/claude-code` |
-| `#opc/` | 一人公司相关 | `#opc/热点` `#opc/收益` |
-
-### 命名规范
-
-- 文件名使用中文，清晰描述内容
-- 多个词用 `-` 连接：`Spec-Kit-完整指南.md`
-- 避免特殊字符
 
 ---
 
@@ -131,9 +108,9 @@ source: workspace-coder/troubleshooting/xxx.md
 
 ```
 workspace/memory/           →  整理后入库
-workspace-thinker/research/ →  02-核心概念/
-workspace-coder/            →  06-踩坑记录/
-workspace-media/content/    →  05-三大专栏/
+workspace-thinker/research/ →  03-AI编程工具/
+workspace-coder/            →  07-踩坑记录/
+workspace-media/content/    →  06-OPC运营/
 ```
 
 ### 同步时间
@@ -156,9 +133,9 @@ git add . && git commit -m "docs: 更新笔记" && git push
 
 ### 新增笔记流程
 
-1. 确定分类目录
+1. 确定分类目录（参考目录说明）
 2. 使用 `write` 工具创建文档
-3. 添加相关文档双链
+3. 添加分类和相关文档双链
 4. 更新 `.sync-state.json`
 5. Git 提交推送
 
@@ -173,11 +150,13 @@ git add . && git commit -m "docs: 更新笔记" && git push
 
 ---
 
-## 相关资源
+## 最近更新
 
-- **Obsidian 官方文档**: https://help.obsidian.md
-- **双链教程**: https://help.obsidian.md/Linking+notes+and+files/Internal+links
-- **关系图谱**: https://help.obsidian.md/Plugins/Graph+view
+**2026-03-26 知识库重组**：
+- ✅ 创建 `03-AI编程工具/` 目录（7篇）
+- ✅ 创建 `06-OPC运营/` 目录（2篇）
+- ✅ 删除重复文档（2篇）
+- ✅ 添加 Obsidian 双链支持
 
 ---
 

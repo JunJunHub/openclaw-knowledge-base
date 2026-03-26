@@ -7,6 +7,9 @@ source: memory/2026-03-19.md
 status: final
 ---
 
+> **分类**：OpenClaw 核心概念
+> **相关文档**：[[多Agent消息互通指南]]
+
 # 架构概述
 
 OpenClaw 支持多 Agent 协作，每个 Agent 有独立的：
