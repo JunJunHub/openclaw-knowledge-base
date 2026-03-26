@@ -1,4 +1,6 @@
-# AI 编码开发规范工具对比
+# AI 编码工具对比：Superpowers vs Spec Kit
+
+> **相关文档**：[[AI编码工具生态全景]] | [[Spec-Kit-完整指南]] | [[Superpowers-功能概览]]
 
 ## Superpowers vs GitHub Spec Kit
 

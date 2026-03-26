@@ -11,14 +11,10 @@
             "id": "db18e254f4b313dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
             }
           }
         ]
@@ -78,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 245.5
   },
   "right": {
     "id": "1665fb1d375db12f",
@@ -94,8 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
-                "collapseAll": false,
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -155,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,8 +163,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "be40312e859cd5a0",
+  "active": "db18e254f4b313dc",
   "lastOpenFiles": [
+    "02-核心概念/Spec-Kit-技术栈工具.md",
+    "02-核心概念/Spec-Kit-多Agent模式.md",
+    "02-核心概念/Spec-Kit-完整指南.md",
+    "README.md",
     "06-踩坑记录/飞书插件路径冲突问题.md",
     "06-踩坑记录/小红书Cookie过期与浏览器配置问题.md",
     "06-踩坑记录/VMWare-Tools与FUSE冲突解决方案.md",
@@ -182,7 +180,6 @@
     "02-核心概念/多Agent消息互通指南.md",
     "02-核心概念/多Agent架构详解.md",
     "01-安装部署/OpenClaw-Ubuntu安装部署.md",
-    "01-安装部署/Obsidian-AppImage安装配置指南.md",
-    "README.md"
+    "01-安装部署/Obsidian-AppImage安装配置指南.md"
   ]
 }

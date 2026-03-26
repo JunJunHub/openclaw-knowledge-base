@@ -1,4 +1,6 @@
-# AI 编码开发规范生态全景
+# AI 编码工具生态全景
+
+> **相关文档**：[[AI编码工具对比-Superpowers-vs-SpecKit]] | [[Spec-Kit-完整指南]] | [[Superpowers-功能概览]]
 
 ## 四层架构
 

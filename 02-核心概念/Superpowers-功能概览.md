@@ -1,5 +1,7 @@
-# Superpowers 仓库功能概览
+# Superpowers 功能概览
 
+> **相关文档**：[[AI编码工具对比-Superpowers-vs-SpecKit]] | [[AI编码工具生态全景]]
+>
 > **GitHub**: https://github.com/obra/superpowers
 > **开发者**: Jesse Vincent
 
