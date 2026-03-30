@@ -97,7 +97,20 @@ SHA256：6E623972E323AB7A61C45A42E50A18201D0F351788B44691B0C55804A8BBC0F2
 - **25H2**：2025年下半年初始版本
 - **25H2u1**：更新版本（Update 1），包含安全修复和bug修复
 
-### 下载步骤
+### 国内下载问题（2026-03）
+
+⚠️ **出口管制限制**
+- 国内访问 Broadcom 官网下载时可能提示：
+  > Account verification is Pending. Please try after some time.
+- 原因：博通对中国地区实施出口管制，账户验证无法通过
+
+### 国内替代下载渠道
+
+**推荐站点：WinningPC**
+- 地址：https://winningpc.com/download-vmware-workstation-pro-for-personal-use/
+- 特点：提供个人使用版下载，无需 Broadcom 账户
+
+### 官方下载步骤（非中国地区）
 
 1. **注册Broadcom账户**
    ```
@@ -127,8 +140,9 @@ SHA256：6E623972E323AB7A61C45A42E50A18201D0F351788B44691B0C55804A8BBC0F2
 
 ### 避坑指南
 - ⚠️ 不要同时安装Hyper-V与旧版VMware（可能导致蓝屏）
-- ⚠️ 下载唯一入口：support.broadcom.com（原VMware官网已不提供下载）
-- ⚠️ 警惕第三方"免注册"安装包
+- ⚠️ 国内用户无法通过 Broadcom 官网下载（出口管制）
+- ⚠️ 推荐使用 WinningPC 等可信第三方站点
+- ⚠️ 警惕来源不明的"破解版"安装包
 
 ### 相关资源
 - 官方发布说明：https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/workstation-pro/25H2/release-notes/
@@ -169,5 +183,5 @@ SHA256：6E623972E323AB7A61C45A42E50A18201D0F351788B44691B0C55804A8BBC0F2
 
 ---
 
-*最后更新：2026-03-24*
+*最后更新：2026-03-30*
 *维护者：沉思助手*
