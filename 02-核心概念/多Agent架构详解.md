@@ -81,12 +81,12 @@ flowchart LR
         "id": "main",
         "name": "MoltBot",
         "default": true,
-        "workspace": "/home/junjun/.openclaw/workspace"
+        "workspace": "/home/jun/.openclaw/workspace"
       },
       {
         "id": "media",
         "name": "墨客",
-        "workspace": "/home/junjun/.openclaw/workspace-media"
+        "workspace": "/home/jun/.openclaw/workspace-media"
       }
     ]
   }

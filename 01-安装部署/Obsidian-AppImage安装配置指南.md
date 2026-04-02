@@ -97,8 +97,8 @@ cat > ~/.local/share/applications/obsidian.desktop << 'EOF'
 [Desktop Entry]
 Name=Obsidian
 Comment=Obsidian Note Taking App
-Exec=/home/junjun/.local/bin/obsidian.AppImage %u
-Icon=/home/junjun/.local/share/icons/hicolor/512x512/apps/obsidian.png
+Exec=/home/jun/.local/bin/obsidian.AppImage %u
+Icon=/home/jun/.local/share/icons/hicolor/512x512/apps/obsidian.png
 Type=Application
 Categories=Office;Utility;
 MimeType=x-scheme-handler/obsidian;

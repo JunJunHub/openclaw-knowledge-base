@@ -77,7 +77,7 @@ npm install -g @anthropic-ai/claude-code
 
 版本信息：
 - 版本：2.1.81
-- 路径：`/home/junjun/.nvm/versions/node/v24.14.0/bin/claude`
+- 路径：`/home/jun/.nvm/versions/node/v24.14.0/bin/claude`
 
 注意事项：
 - 国内需配置代理（api.anthropic.com 被墙）

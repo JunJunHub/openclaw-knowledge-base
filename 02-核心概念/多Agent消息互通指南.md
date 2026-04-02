@@ -41,7 +41,7 @@ status: final
         "id": "main",
         "name": "MoltBot",
         "default": true,
-        "workspace": "/home/junjun/.openclaw/workspace",
+        "workspace": "/home/jun/.openclaw/workspace",
         "subagents": {
           "allowAgents": ["media", "thinker", "monitor", "coder"]
         }
@@ -49,22 +49,22 @@ status: final
       {
         "id": "media",
         "name": "墨客",
-        "workspace": "/home/junjun/.openclaw/workspace-media"
+        "workspace": "/home/jun/.openclaw/workspace-media"
       },
       {
         "id": "thinker",
         "name": "沉思",
-        "workspace": "/home/junjun/.openclaw/workspace-thinker"
+        "workspace": "/home/jun/.openclaw/workspace-thinker"
       },
       {
         "id": "coder",
         "name": "极客",
-        "workspace": "/home/junjun/.openclaw/workspace-coder"
+        "workspace": "/home/jun/.openclaw/workspace-coder"
       },
       {
         "id": "monitor",
         "name": "哨兵",
-        "workspace": "/home/junjun/.openclaw/workspace-monitor"
+        "workspace": "/home/jun/.openclaw/workspace-monitor"
       }
     ]
   }

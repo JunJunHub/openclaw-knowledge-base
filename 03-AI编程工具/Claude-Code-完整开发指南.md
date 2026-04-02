@@ -111,6 +111,41 @@ claude
 
 ---
 
+## 🔌 插件配置
+
+Claude Code 支持通过插件扩展功能。插件通过 `settings.json` 配置启动脚本，而非直接运行命令。
+
+### claude-hud 插件示例
+
+**配置位置**：`~/.claude/settings.json`
+
+```json
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "command": "/home/jun/.claude/plugins/claude-hud/run-hud.sh"
+      }
+    ]
+  }
+}
+```
+
+**启动脚本内容** (`run-hud.sh`)：
+```bash
+#!/bin/bash
+# Claude HUD wrapper script
+PLUGIN_DIR=$(ls -d "${CLAUDE_CONFIG_DIR:-$HOME/.claude}"/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null | awk -F/ '{ print $(NF-1) "\t" $(0) }' | sort -t. -k1,1n -k2,2n -k3,3n -k4,4n | tail -1 | cut -f2-)
+exec "/home/jun/.nvm/versions/node/v22.22.2/bin/node" "${PLUGIN_DIR}dist/index.js"
+```
+
+**关键点**：
+- 在 `settings.json` 中配置 `hooks.SessionStart` 启动脚本路径
+- 脚本会自动查找最新版本的插件并启动
+- 使用 Node.js 执行插件的 `dist/index.js`
+
+---
+
 ## 🔌 必备 MCP 服务器
 
 MCP (Model Context Protocol) 让 Claude Code 能够与外部服务通信，扩展其能力。

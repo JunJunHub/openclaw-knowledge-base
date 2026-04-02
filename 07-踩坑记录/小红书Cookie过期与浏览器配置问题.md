@@ -36,7 +36,7 @@ status: final
 
 尝试共享用户 Chrome 配置时遇到：
 ```
-Invalid config at /home/junjun/.openclaw/openclaw.json:
+Invalid config at /home/jun/.openclaw/openclaw.json:
 - browser: Unrecognized key: "userDataDir"
 ```
 

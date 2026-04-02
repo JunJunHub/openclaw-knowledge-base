@@ -145,7 +145,7 @@ sequenceDiagram
 ### workspace-monitor 定时任务配置
 ```bash
 # 每天 07:45 执行
-45 7 * * * /home/junjun/.openclaw/workspace-monitor/scripts/collect-ai-hotspots.sh
+45 7 * * * /home/jun/.openclaw/workspace-monitor/scripts/collect-ai-hotspots.sh
 ```
 
 ### 飞书同步配置
