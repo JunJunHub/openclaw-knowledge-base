@@ -190,6 +190,85 @@ sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
 ---
 
+---
+
+## 规格文档同步更新 (2026-03-24)
+
+> 基于已实现功能，反向更新所有规格文档
+
+### 文档结构重组
+
+**重命名现有文档**（与阶段编号对应）：
+- `02-openclaw-install.md` → `04-openclaw.md`
+- `03-config-restore.md` → `05-config.md`
+- `04-workspaces.md` → `06-workspaces.md`
+- `05-verification.md` → `07-verify.md`
+- `06-file-sharing.md` → `09-file-sharing.md`
+- `07-obsidian.md` → `10-obsidian.md`
+
+**创建缺失文档**：
+- ✅ `02-node.md` - Node.js 环境规格
+- ✅ `03-chrome.md` - Chrome 浏览器规格
+- ✅ `08-dev-tools.md` - 开发工具规格
+- ✅ `11-python.md` - Python 工具规格
+- ✅ `12-golang.md` - Go 环境规格
+
+### 最终文档清单（12 个阶段全覆盖）
+
+| 阶段 | 规格文档 | 主要内容 |
+|------|---------|---------|
+| 00 | `00-overview.md` | 项目总览、阶段清单、使用说明 |
+| 01 | `01-system-deps.md` | 基础工具 + 中文输入法 |
+| 02 | `02-node.md` | NVM + Node.js v24 |
+| 03 | `03-chrome.md` | Chrome .deb 安装 |
+| 04 | `04-openclaw.md` | OpenClaw + Serper 插件 |
+| 05 | `05-config.md` | 配置文件恢复 |
+| 06 | `06-workspaces.md` | Agent 工作空间 |
+| 07 | `07-verify.md` | 安装验证 |
+| 08 | `08-dev-tools.md` | Claude Code + GitHub CLI |
+| 09 | `09-file-sharing.md` | Samba 配置 |
+| 10 | `10-obsidian.md` | Obsidian + 架构选择逻辑 |
+| 11 | `11-python.md` | pip, uv + 开发工具 |
+| 12 | `12-golang.md` | gvm + Go SDK |
+
+### 关键更新内容
+
+#### 01-system-deps.md
+- ➕ 新增 `tree`, `sqlite3` 工具说明
+- ➕ 新增中文输入法配置章节
+- ⚠️ 添加 `ibus-qt4` 已废弃说明
+
+#### 04-openclaw.md
+- 🔄 默认版本改为 `openclaw@latest`（原版）
+- ➕ 新增 Serper 搜索插件配置说明
+- ➕ 新增 API Key 获取指南
+
+#### 10-obsidian.md
+- ➕ 新增架构支持说明（x86_64 / ARM64）
+- ➕ 新增版本选择逻辑代码
+- ➕ 新增常见问题解决方案
+
+#### 00-overview.md
+- 🔄 更新阶段清单（12 个阶段）
+- ➕ 新增国内优化镜像说明
+- ➕ 新增目录结构图
+- ➕ 新增敏感信息配置示例
+
+### 统计信息
+
+```
+规格文档总数: 13 个
+├── 总览文档: 1 个
+├── 阶段文档: 12 个
+└── 新增文档: 5 个
+
+总字数: ~25,000 字
+代码示例: 50+ 个
+表格: 30+ 个
+```
+
+---
+
 ## 后续优化方向
 
 ### 功能增强
