@@ -269,6 +269,51 @@ sudo apt install -y ./google-chrome-stable_current_amd64.deb
 
 ---
 
+## 安装顺序重构 (2026-04-08)
+
+### 新安装顺序（按依赖分层）
+
+```
+基础层:   system → github-hosts → docker → node → python → golang
+OpenClaw: chrome → openclaw → config → workspaces
+工具层:   dev-tools
+应用层:   file-sharing → obsidian → n8n → qt
+验证层:   verify
+```
+
+### 关键变更
+
+| 变更 | 原因 |
+|------|------|
+| Docker 提前到第3阶段 | N8N 依赖 Docker |
+| Qt 放到最后 | 安装耗时最长，不阻塞其他功能 |
+| 新增 N8N 阶段 | 工作流自动化平台 |
+| CC Switch 改用 deb 包 | 更稳定 |
+| Docker 镜像源更新 | IPv4 兼容 |
+
+### 阶段对照表
+
+| 阶段 | 名称 | 说明 |
+|------|------|------|
+| 01 | system | 系统依赖 |
+| 02 | github-hosts | GitHub hosts 配置 |
+| 03 | docker | Docker 容器环境 ← 新增 |
+| 04 | node | Node.js |
+| 05 | python | Python 工具 |
+| 06 | golang | Go 环境 |
+| 07 | chrome | Chrome 浏览器 |
+| 08 | openclaw | OpenClaw |
+| 09 | config | 配置恢复 |
+| 10 | workspaces | Workspace 创建 |
+| 11 | dev-tools | 开发工具 |
+| 12 | file-sharing | 文件共享 |
+| 13 | obsidian | Obsidian |
+| 14 | n8n | N8N 工作流平台 ← 新增 |
+| 15 | qt | Qt 开发环境 |
+| 16 | verify | 全量验证 |
+
+---
+
 ## 后续优化方向
 
 ### 功能增强
