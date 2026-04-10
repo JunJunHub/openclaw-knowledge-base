@@ -23,11 +23,14 @@
 # /etc/docker/daemon.json
 {
   "registry-mirrors": [
-    "https://docker.1ms.run",
-    "https://docker.xuanyuan.me"
+    "https://hub.rat.dev",
+    "https://docker.hlyun.org",
+    "https://mirror.ccs.tencentyun.com"
   ]
 }
 ```
+
+> ⚠️ 镜像源更新为 IPv4 兼容版本（2026-04-08）
 
 ### 2. 启动 N8N
 
