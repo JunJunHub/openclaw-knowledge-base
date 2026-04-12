@@ -29,5 +29,21 @@ Qt5 和 Qt6 环境变量可以共存，CMake 根据需要自动选择。
 
 ---
 
+## 一键恢复工具集成
+
+`openclaw-recovery` 工具在安装 Qt 后自动执行 `setup_qt_env()`：
+
+```bash
+# 自动检测 Qt 版本并配置
+QT_VERSION=$(ls ~/Qt/ | grep -E '^[0-9]+' | head -1)
+export Qt6_DIR="$HOME/Qt/$QT_VERSION/gcc_64/lib/cmake/Qt6"
+echo "export Qt6_DIR=\"$Qt6_DIR\"" >> ~/.bashrc
+```
+
+**注意**：需要重新加载 shell 或手动 `source ~/.bashrc` 生效。
+
+---
+
 **来源**：`workspace/memory/2026-04-11-qt-env-config.md`
 **整理时间**：2026-04-11
+**更新**：2026-04-12
